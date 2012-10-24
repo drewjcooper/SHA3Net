@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SHA3Net")]
-[assembly: AssemblyDescription("A SHA-3 (Keccak) implementation for .Net")]
+[assembly: AssemblyTitle("SHA3Net.Tests")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("DrewJSoftware")]
-[assembly: AssemblyProduct("SHA3Net")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SHA3Net.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("32719b7c-4ee7-4fce-a480-291b975f2b3d")]
+[assembly: Guid("8029658c-28a4-4fc6-bb9c-8d475b2cb39f")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,7 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.1.0.0")]
-[assembly: AssemblyFileVersion("0.1.0.0")]
-
-[assembly: InternalsVisibleTo("SHA3Net.Tests")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

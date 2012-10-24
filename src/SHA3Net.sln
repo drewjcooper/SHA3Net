@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Windows Desktop
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHA3Net", "SHA3Net\SHA3Net.csproj", "{C59F6A1E-0C3C-47D0-A8AE-0F944BBEEA6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHA3Net.Tests", "SHA3Net.Tests\SHA3Net.Tests.csproj", "{EEC81F19-D77B-45F7-85CC-D151F1786A5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{C59F6A1E-0C3C-47D0-A8AE-0F944BBEEA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C59F6A1E-0C3C-47D0-A8AE-0F944BBEEA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C59F6A1E-0C3C-47D0-A8AE-0F944BBEEA6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEC81F19-D77B-45F7-85CC-D151F1786A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC81F19-D77B-45F7-85CC-D151F1786A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC81F19-D77B-45F7-85CC-D151F1786A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC81F19-D77B-45F7-85CC-D151F1786A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
