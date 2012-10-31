@@ -6,7 +6,7 @@ namespace SHA3Net
 {
     internal class Sponge
     {
-        private long[][] a;
+        private ulong[][] state;
         private byte[] inputBlock;
         private int nextInputIndex;
 
@@ -29,13 +29,13 @@ namespace SHA3Net
             throw new NotImplementedException();
         }
 
-        internal IEnumerable<IEnumerable<byte>> State 
+        internal IEnumerable<IEnumerable<ulong>> State 
         { 
             get 
             {
-                foreach (var row in a)
+                foreach (var row in state)
                 {
-                    yield return row.GetEnumerator() as IEnumerable<byte>;
+                    yield return row.GetEnumerator() as IEnumerable<ulong>;
                 }
             } 
         }

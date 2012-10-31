@@ -36,6 +36,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IPermutation.cs" />
+    <Compile Include="Permutation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SHA3.cs" />
     <Compile Include="SHA3Managed.cs" />

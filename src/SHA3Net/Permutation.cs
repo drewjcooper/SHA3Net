@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SHA3Net
 {
-    internal static class SpongeHelper
+    internal class Permutation : IPermutation
     {
         private static readonly ulong[] roundConstants;
         private static readonly int[][] shiftOffsets;
@@ -13,7 +13,7 @@ namespace SHA3Net
         private static readonly ulong[] c;
         private static readonly ulong[] d;
 
-        static SpongeHelper()
+        static Permutation()
         {
             b = new[] {new ulong[5],
                         new ulong[5],
@@ -39,7 +39,7 @@ namespace SHA3Net
                                   new [] {27, 20, 39, 8, 14}};
         }
 
-        static internal void PermuteState(ulong[][] a)
+        public void Execute(ulong[][] a)
         {
             for (int round = 0; round < 24; round++)
             {
@@ -50,7 +50,7 @@ namespace SHA3Net
             }
         }
 
-        static private void DoThetaStep(ulong[][] a)
+        private void DoThetaStep(ulong[][] a)
         {
             for (int x = 0; x <= 4; x++)
             {
@@ -67,7 +67,7 @@ namespace SHA3Net
             }
         }
 
-        static private void DoRhoPiSteps(ulong[][] a)
+        private void DoRhoPiSteps(ulong[][] a)
         {
             for (int x = 0; x <= 4; x++)
             {
@@ -78,7 +78,7 @@ namespace SHA3Net
             }
         }
 
-        static private void DoChiStep(ulong[][] a)
+        private void DoChiStep(ulong[][] a)
         {
             for (int x = 0; x <= 4; x++)
             {
@@ -89,12 +89,12 @@ namespace SHA3Net
             }
         }
 
-        static private void DoIotaStep(ulong[][] a, ulong RC)
+        private void DoIotaStep(ulong[][] a, ulong RC)
         {
             a[0][0] ^= RC;
         }
 
-        static internal ulong Rot(ulong value, int offset)
+        internal ulong Rot(ulong value, int offset)
         {
             return (value << offset) | (value >> (64 - offset));
         }
