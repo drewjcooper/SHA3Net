@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using NUnit.Framework;
-using Moq;
+﻿using NUnit.Framework;
+using System;
 
 namespace SHA3Net.Tests
 {
