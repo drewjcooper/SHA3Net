@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Moq.Contrib</id>
+    <version>0.3</version>
+    <title>Moq.Contrib</title>
+    <authors>kzu.net</authors>
+    <owners>kzu.net</owners>
+    <licenseUrl>http://www.opensource.org/licenses/bsd-license.php</licenseUrl>
+    <projectUrl>http://code.google.com/p/moq-contrib/</projectUrl>
+    <iconUrl>https://nugetgallery.blob.core.windows.net/icons/Moq.Contrib.0.3.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Contributed features and third-party integration for Moq.</description>
+    <summary>Contributed features and third-party integration for Moq.</summary>
+    <copyright>Copyright (c) 2007, Moq Contributors</copyright>
+    <tags>TDD moq mocking mocks unittesting</tags>
+    <dependencies>
+      <dependency id="Moq" version="4.0" />
+    </dependencies>
+  </metadata>
+</package>
